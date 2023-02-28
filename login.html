@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #0C1222;
+        }
+        #loginfull{
+            height: auto;
+            width: 400px;
+            background-color: #172132;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 120px 1px rgba(255, 255, 255, 0.306);
+           
+
+        }
+        #logo{
+            height: 150px;
+            width: 150px;
+            margin: auto;
+           
+        }
+        #login{
+            color: #2E5CAA;
+            text-align: center;
+            margin-top: -10px;
+            top: -10px;
+            font-size: 39px;
+        }
+        #createach{
+            color: #2E5CAA;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        input{
+            border: none;
+            background-color: #40495896;
+            width: 100%;
+            margin: auto;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            outline: none;
+            cursor: pointer;
+            
+        }
+        input:active{
+            border: none;
+            outline: none;
+        }
+        #createac{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            margin-top: 45px;
+            background-color: #40495896;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+        #logini{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            margin-top: 45px;
+            background-color: #40495896;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+        #createac:hover{
+            background-color: #404958;
+        }
+        input:hover{
+            background-color: #404958;
+        }
+
+        .create{
+            height: auto;
+            width: 400px;
+            background-color: #172132;
+            margin: auto;
+            display: none;
+            flex-direction: column;
+            margin-top: 2%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 120px 1px rgba(255, 255, 255, 0.306);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="login" id="loginfull">
+        <img id="logo" src="./assets/logo1.png" alt="LOGO">
+        <h1 id="login">Login</h1>
+        <form>
+           
+            <input id="email" type="email" placeholder="Email"><br>
+            <input id="password" type="password" placeholder="Password"><br>
+            <input id="submit" type="submit" value="Login">
+            
+        </form>
+        <a id="createac" href="#">Create account</a>
+
+    </div>
+    <div class="create" id="create">
+        <img id="logo" src="./assets/logo1.png" alt="LOGO">
+        <h1 id="createach">Create Account</h1>
+        <form>
+           
+            <input id="name" type="text" placeholder="Full Name"><br>
+            <input id="phone" type="tel" placeholder="Phone Number"><br>
+            <input id="email" type="email" placeholder="Email"><br>
+            <input id="password" type="password" placeholder="Password"><br>
+            <input id="submit" type="submit" value="Create Account">
+            
+        </form>
+        <a id="logini" href="#">Login</a>
+
+    </div>
+
+
+    <script>
+        
+        const createBtn = document.getElementById('createac');
+        const loginBtn = document.getElementById('logini');
+        const login = document.getElementById('loginfull');
+        const create = document.getElementById('create');
+
+        createBtn.onclick=()=>{
+            login.style.display = 'none';
+            create.style.display = 'flex';
+            
+        }
+        loginBtn.onclick=()=>{
+            login.style.display ='flex';
+            create.style.display='none';
+        }
+
+
+
+
+    </script>
+</body>
+</html>

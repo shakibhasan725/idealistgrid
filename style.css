@@ -21,7 +21,7 @@ nav{
     flex-direction: row;
     background-color: #0C1B2E;
     font-family: roboto;
-
+    
 
 }
 
@@ -162,6 +162,8 @@ nav ul li a{
     border-radius: 50px;
 }
 
+/*--------------------------*/
+
 
 .secpage{
     background-color: #0D1322;
@@ -237,5 +239,76 @@ nav ul li a{
     font-size: 20px;
     color: white;
     margin-top: 25px;
+    text-align: center;
+}
+
+
+/*--------------------------*/
+
+.thirdp{
+    height: 100vh;
+    background-color: #0D1322;
+    display: flex;
+    flex-direction: column;
+}
+
+.hhead{
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+}
+#thimg{
+    height: 80px;
+    margin-left: 48%;
+    
+}
+#thh1{
+    text-align: center;
+    color: white;
+}
+
+.thbody{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftth{
+    width: 40%;
+}
+.leftth img{
+    height: 350px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.rightth{
+    width: 45%;
+    background-color: #45A3DA;
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    
+
+
+}
+
+.serial{
+    width: 10px;
+    font-family: roboto;
+
+    height: 800px;
+    background-color: rgb(225, 7, 7);
+    
+    
+}
+.serialk{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 50%;
     text-align: center;
 }
