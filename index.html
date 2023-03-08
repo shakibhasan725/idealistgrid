@@ -14,16 +14,16 @@
         <ul>
             
             <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="#secpage">Courses</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="./login.html">Login</a></li>
         </ul>
     </nav>
 
-    <div class="body">
-        <div class="left">
+    <div class="body" >
+        <div class="left" > 
             <h1 class="title">Idealist <span class="titles">Grid</span></h1>
-            <p class="mainp">Idealist Grid হচ্ছে এমন একটি Online Learning
+            <p class="mainp" class="hidden">Idealist Grid হচ্ছে এমন একটি Online Learning
                 Platform যেখানে আপনি  খুব সহজে  Freelancing
                 এর বিভিন্ন ধরনের Course যেমনঃ- Graphics Design,
                 Web design and Web Development ইত্যাদি বিনামূল্যে
@@ -48,7 +48,7 @@
         </div>
 
     </div>
-    <div class="secpage">
+    <div class="secpage" id="secpage" >
         <div class="sechead">
             <img src="./assets/avatar.svg" alt="">
             <h1 id="sech1">এক নজরে আমাদের <span style="color: #45A3DA;""> ফ্রি</span> কোর্স </h1>
@@ -57,8 +57,8 @@
         </div> 
        
 
-        <div class="secmain">
-            <div class="seccon">
+     
+            <div class="seccon" >
                 <div class="seccon1">
                     <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
@@ -100,9 +100,8 @@
             </div>
         </div>
 
-    </div>
 
-    <div class="thirdp">
+    <div class="thirdp" >
         <div class="thhead">
             <img id="thimg" src="./assets/avatar.svg" alt="">
             <h1 id="thh1" >কোর্সে যেসব মডিউল থাকছে</h1> 
@@ -114,38 +113,44 @@
         </div>
         <div class="rightth">
             <div class="serial">
-                <p class="serialk">1</p>
-                <p class="serialk">2</p>
-                <p class="serialk">3</p>
-                <p class="serialk">4</p>
-                <p class="serialk">5</p>
-                <p class="serialk">6</p>
+                <p class="serialk" id="serial1">1</p>
+                <p class="serialk" id="serial2">2</p>
+                <p class="serialk" id="serial3">3</p>
+                <p class="serialk" id="serial4">4</p>
+                <p class="serialk" id="serial5">5</p>
+              
             </div>
             <div class="contth">
                 <p class="week1">
-                    ১ম সপ্তাহে Computer Basic, Software Install  এবং Vs Code এর ব্যাবহার শেখানো হবে ।
-
+                    ১ম সপ্তাহ <br> <span id="week1">Computer Basic, Software Install  এবং Vs Code এর ব্যাবহার শেখানো হবে।</span> 
+                    <br> <span id="week1bt">Live Problem Solving</span>
                 </p>
                 <p class="week2">
-                    ২য় - ৪র্থ সপ্তাহে HTML শেখানো হবে ।
+                    ২য় - ৪র্থ সপ্তাহ <br> <span id="week2">HTML শেখানো হবে।</span> 
+                    <br> <span id="week2bt">Homework</span> 
                 </p>
                 <p class="week3">
-                    ৫ম - ৮ম সপ্তাহে CSS শেখানো হবে ।
-
+                    ৫ম - ৮ম সপ্তাহ <br> <span id="week3">CSS শেখানো হবে।</span> 
+                    <br> <span id="week3bt">Homework</span> 
 
                 </p>
                 <p class="week4">
-                    ৯ম এবং ১০ম  সপ্তাহে HTML & CSS এর Project দেখানো হবে।
-
+                    ৯ম এবং ১০ম সপ্তাহ <br> <span id="week4">HTML & CSS এর Project দেখানো হবে।</span> 
+                    <br> <span id="week4bt">Homework</span> <span id="week4bt1">Live Project</span> 
                 </p>
                 <p class="week5">
-                    ১১ তম - ২৫ তম সপ্তাহ পর্যন্ত JavaScript ব্যাবহার করে Web Development শেখানো হবে এবং Project দেখানো হবে। 
-
+                    ১১ তম - ২৫ তম সপ্তাহ <br> <span id="week5">JavaScript ব্যাবহার করে Web Development শেখানো হবে এবং Project দেখানো হবে। </span> 
+                    <br> <span id="week5bt">Homework</span> <span id="week5bt1">Live Project</span> 
                 </p>
             </div>
         </div>
        </div>
     </div>
+
+
+
+
+
 
 </body>
 </html>
